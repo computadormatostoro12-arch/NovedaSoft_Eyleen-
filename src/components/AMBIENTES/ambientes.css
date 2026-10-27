@@ -1,0 +1,114 @@
+/* Contenedor Principal */
+.ambientes-container {
+  padding: 40px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Encabezado */
+.ambientes-container h2 {
+  color: #1e293b;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  border-left: 5px solid #39a900; /* Verde institucional SENA */
+  padding-left: 12px;
+}
+
+.ambientes-container p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  padding-left: 17px;
+}
+
+/* Grilla de Tarjetas Responsive */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Tarjeta individual */
+.ambiente-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Efecto Hover en la Tarjeta */
+.ambiente-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+/* Título del Ambiente */
+.ambiente-card h3 {
+  font-size: 1.25rem;
+  color: #0f172a;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Texto e Información Interna */
+.ambiente-card p {
+  font-size: 0.9rem;
+  color: #475569;
+  margin: 8px 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Etiquetas de Estado (Badges) */
+.status-disp,
+.status-ocup {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-disp {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-ocup {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Botón de Acción */
+.ambiente-card button {
+  background-color: #39a900; /* Verde SENA */
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.ambiente-card button:hover {
+  background-color: #2e8b00;
+}
+
+.ambiente-card button:active {
+  transform: scale(0.98);
+}
