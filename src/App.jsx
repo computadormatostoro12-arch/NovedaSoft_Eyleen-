@@ -7,8 +7,8 @@ function App() {
 	return (
 		<>
 			<Ambientes />
-			<Cuentadante />
-			<Facilitador />
+			{/* <Cuentadante /> */}
+			{/* <Facilitador /> */}
 		</>
 	)
 }
